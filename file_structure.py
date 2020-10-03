@@ -10,13 +10,11 @@ class TrieNode(object):
 
 
 class FileStructure(object):
-
     """
     File Structure involving Linux Path Traversal
     """
 
     def __init__(self):
-
         """
         File Structure starts from root directory and have 3 data members
         root: TrieNode having root directory
@@ -29,7 +27,6 @@ class FileStructure(object):
         self.point = self.root
 
     def get_pwd(self):
-
         """
         Method required to return the path of current directory from root
         """
@@ -40,7 +37,6 @@ class FileStructure(object):
         return "PATH: /" + s.join(self.current)
 
     def process(self, cmd: str):
-
         """
         Method require to manage which method to call for particular command
         """
@@ -63,7 +59,6 @@ class FileStructure(object):
             return "ERR: CANNOT RECOGNIZE INPUT"
 
     def list_dir(self, cmd=None):
-
         """
         Method required to return the list of all the directories
         present in a directory
@@ -95,7 +90,6 @@ class FileStructure(object):
         return start + "  ".join(childs)
 
     def new_dir(self, word):
-
         """
         Method required to return the response whether dirs bean created or not
         """
@@ -136,7 +130,6 @@ class FileStructure(object):
         return "ERR: DIRECTORY ALREADY EXISTS"
 
     def change_dir(self, word):
-
         """
         Method required to return whether file structure can be traverse
         through a particular path
@@ -176,7 +169,6 @@ class FileStructure(object):
         return "SUCC: REACHED"
 
     def remove_dir(self, word):
-
         """
         Method required to remove/delete a directory
         """

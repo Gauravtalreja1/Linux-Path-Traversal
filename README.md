@@ -1,9 +1,13 @@
 # Linux-Path-Traversal
 
 Run the code as,
-# # python application.py
+```
+# python application.py
+```
 
 OR
 
-# # chmod +x application.py
-# # ./application.py
+```
+# chmod +x application.py
+# ./application.py
+```
